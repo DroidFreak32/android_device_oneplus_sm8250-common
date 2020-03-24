@@ -229,7 +229,8 @@ PRODUCT_COPY_FILES += \
 
 # Device Settings
 PRODUCT_PACKAGES += \
-    DeviceSettings
+    DeviceSettings \
+    RemovePackages
 
 # Display
 PRODUCT_PACKAGES += \
