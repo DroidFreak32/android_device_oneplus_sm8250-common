@@ -41,7 +41,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     OnePlusCameraOverlay \
-    OnePlusGalleryOverlay
+    OnePlusGalleryOverlay \
+    OPSoundTunerOverlay
 
 # VNDK
 PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
