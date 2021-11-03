@@ -438,6 +438,7 @@ PRODUCT_PACKAGES += \
 
 # tri-state-key
 PRODUCT_PACKAGES += \
+    KeyHandler \
     tri-state-key-calibrate
 
 # Trust HAL

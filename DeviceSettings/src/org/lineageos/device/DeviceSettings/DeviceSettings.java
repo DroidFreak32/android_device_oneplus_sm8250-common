@@ -76,9 +76,6 @@ public class DeviceSettings extends PreferenceFragment
     private static TwoStatePreference mRefreshRate;
     private static SwitchPreference mAutoRefreshRate;
     private static SwitchPreference mFpsInfo;
-    private ListPreference mTopKeyPref;
-    private ListPreference mMiddleKeyPref;
-    private ListPreference mBottomKeyPref;
     private VibratorStrengthPreference mVibratorStrength;
 
     @Override
@@ -100,16 +97,6 @@ public class DeviceSettings extends PreferenceFragment
         if (mVibratorStrength == null || !VibratorStrengthPreference.isSupported()) {
             getPreferenceScreen().removePreference((Preference) findPreference("vibrator"));
         }
-
-        mTopKeyPref = (ListPreference) findPreference(Constants.NOTIF_SLIDER_TOP_KEY);
-        mTopKeyPref.setValueIndex(Constants.getPreferenceInt(getContext(), Constants.NOTIF_SLIDER_TOP_KEY));
-        mTopKeyPref.setOnPreferenceChangeListener(this);
-        mMiddleKeyPref = (ListPreference) findPreference(Constants.NOTIF_SLIDER_MIDDLE_KEY);
-        mMiddleKeyPref.setValueIndex(Constants.getPreferenceInt(getContext(), Constants.NOTIF_SLIDER_MIDDLE_KEY));
-        mMiddleKeyPref.setOnPreferenceChangeListener(this);
-        mBottomKeyPref = (ListPreference) findPreference(Constants.NOTIF_SLIDER_BOTTOM_KEY);
-        mBottomKeyPref.setValueIndex(Constants.getPreferenceInt(getContext(), Constants.NOTIF_SLIDER_BOTTOM_KEY));
-        mBottomKeyPref.setOnPreferenceChangeListener(this);
 
         mEnableDolbyAtmos = (TwoStatePreference) findPreference(KEY_ENABLE_DOLBY_ATMOS);
         mEnableDolbyAtmos.setOnPreferenceChangeListener(this);
