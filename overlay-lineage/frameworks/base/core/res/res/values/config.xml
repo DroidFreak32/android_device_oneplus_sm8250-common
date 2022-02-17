@@ -28,4 +28,7 @@
 
     <!-- Does the device have a notification led -->
     <bool name="config_hasNotificationLed">false</bool>
+
+    <!-- Whether to force enable multi resolution configuration for camera -->
+    <bool name="config_forceMultiResolution">true</bool>
 </resources>
