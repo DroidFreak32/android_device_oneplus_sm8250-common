@@ -551,3 +551,19 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_touch_timer_ms=200 \
     ro.surface_flinger.use_color_management=true \
     ro.surface_flinger.wcg_composition_dataspace=143261696
+
+$(call inherit-product, vendor/addons/config.mk)
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+  system/app/GoogleExtShared/GoogleExtShared.apk \
+  system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk \
+  system/etc/permissions/game-overlay.xml \
+  system/etc/permissions/privapp-permissions-google.xml \
+  system/lib/libRSSupport.so \
+  system/lib/libblasV8.so \
+  system/lib/librsjni.so \
+  system/addon.d/70-velvet.sh \
+  system/app/FlipendoPrebuilt/FlipendoPrebuilt.apk
+
+# Include gapps
+TARGET_GAPPS_ARCH := arm64
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
