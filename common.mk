@@ -562,7 +562,3 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
   system/lib/librsjni.so \
   system/addon.d/70-velvet.sh \
   system/app/FlipendoPrebuilt/FlipendoPrebuilt.apk
-
-# Include gapps
-TARGET_GAPPS_ARCH := arm64
-$(call inherit-product-if-exists, vendor/gapps/config.mk)
