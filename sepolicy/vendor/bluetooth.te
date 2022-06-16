@@ -1,2 +1,0 @@
-allow bluetooth incremental_prop:file { read getattr map open };
-allow bluetooth proc_filesystems:file { getattr open read };
