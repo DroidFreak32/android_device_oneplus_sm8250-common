@@ -228,6 +228,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.class_main.sh \
+    init.evolution.rc \
     init.oplus.hw.rc \
     init.oplus.hw.rc.recovery \
     init.oplus.rc \
@@ -246,10 +247,6 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.oplus
 
 # Media
 PRODUCT_COPY_FILES += \
